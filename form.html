@@ -3,25 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
+    <style>
+        .current{
+           background-color: blueviolet; 
+        }
+    </style>
 </head>
 <body>
     <header> 
         <a href="https://www.google.com/"><img width="24px" src="https://cdn-icons-png.flaticon.com/512/1561/1561753.png" alt=""></a>
+        <a href="index.html">Главная</a> 
         <a href="cats.html">cats</a> 
         <a href="task1001.html">Задача 1001</a>
         <a href="passportNew.html">Паспорт</a>
         <a href="list.html">Список</a>
         <a href="puppy.jpg" target="_blank">Картинка</a>
+        <a class="current" href="form.html">Форма</a> 
+        <a href="DOM.html">DOM</a> 
     </header> 
     <h1>Форма</h1>
+    <form action="https://postman-echo.com" method="get">
     <p>Фамилия: <input type="text"></p>
     <p>Имя: <input type="text"></p>
     <p>Отчество: <input type="text"></p>
-    <p>Группа: <input type="text"></p>
+    <p>Группа: <input type="text" value="BTLDT251" required></p>
     <p>E-Mail: <input type="text"></p>
     <p>Возраст: <input type="number"></p>
-    <p>Пароль от компьютера: <input type="number"></p>
-    <input type="submit" value="Проверить">
+        <p>
+            <label>Пол:</label><br>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Мужской</label>
+
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Женский</label>
+        </p>
+         <p>
+            <label>Языки:</label><br>
+            <input type="checkbox" name="lang" value="html" id="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="lang" value="css" id="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="lang" value="js" id="js">
+            <label for="js">JS</label>
+        </p>
+         <p>
+            <label for="animal">Любимое животное:</label><br>
+            <select name="animal" id="animal">
+                <option value="cat">Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="hamster">Хомяк</option>
+                <option value="snake">Змея</option>
+            </select>
+        </p>
+        <p>
+            <label for="about">О себе:</label><br>
+            <textarea name="about" id="about" rows="5" cols="40"></textarea>
+        </p>
+         <p>
+            <label for="date">Сегодняшняя дата:</label><br>
+            <input type="date" name="date" id="date">
+        </p>
+
+    <label for="password">Пароль:</label><br>
+    <input type="password" name="password" id="password" value="Проверить">
+    <input type="submit" value="Отправить">
+    </form>
+    
 </body>
 </html>

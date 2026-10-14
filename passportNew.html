@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Паспорт</title>
+    <title>Изменяем кириллицу на латиницу по клику</title>
     <style>
         body{
     background-image: url(shablon.png); 
@@ -23,17 +23,23 @@
         #city       { margin-left: 740px; margin-top: 3px; }
         #cat        { margin-left: 565px; margin-top: -100px; }
         #button     { margin-left: 570px; margin-top: 60px; }
+        .current{
+           background-color: blueviolet; 
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header> 
         <a href="https://www.google.com/"><img width="24px" src="https://cdn-icons-png.flaticon.com/512/1561/1561753.png" alt=""></a>
+        <a href="index.html">Главная</a> 
         <a href="cats.html">cats</a> 
         <a href="task1001.html">Задача 1001</a>
-        <a href="passportNew.html">Паспорт</a>
+        <a class="current" href="passportNew.html">Паспорт</a>
         <a href="list.html">Список</a>
         <a href="puppy.jpg" target="_blank">Картинка</a>
-    </header>
+        <a  href="form.html">Форма</a> 
+        <a href="DOM.html">DOM</a> 
+    </header> 
    
     <div id="mvd">МВД по республике Татарстан</div>
     <div id="data">22.12.2020</div>
